@@ -1,197 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Crowd Computer</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="shortcut icon" href="img/cc.png">
-  <link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="flat-ui/css/flat-ui.css">
-  <!-- Using only with Flat-UI (free)-->
-  <link rel="stylesheet" href="common-files/css/icon-font.css">
-  <link href="flat-ui/css/flat-ui.css" rel="stylesheet">
-  <!-- end -->
-  <link rel="stylesheet" href="common-files/css/animations.css">
-  <link rel="stylesheet" href="ui-kit/ui-kit-header/css/ui-kit-styles.css">
-  <link rel="stylesheet" href="ui-kit/ui-kit-content/css/ui-kit-styles.css">
-  <link rel="stylesheet" href="ui-kit/ui-kit-footer/css/ui-kit-styles.css">
-  <style type="text/css">
-  body{
-    padding-top: 0;
-  }
-  .myhead a:link {
-    color: #FFF;
-    text-decoration: underline;
-  }
+    <meta charset="utf-8">
+    <title>Crowd Computer</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="shortcut icon" href="img/cc.png">
+    <link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="flat-ui/css/flat-ui.css">
+    <!-- Using only with Flat-UI (free)-->
+    <link rel="stylesheet" href="common-files/css/icon-font.css">
+    <link href="flat-ui/css/flat-ui.css" rel="stylesheet">
+    <!-- end -->
+    <link rel="stylesheet" href="common-files/css/animations.css">
+    <link rel="stylesheet" href="ui-kit/ui-kit-header/css/ui-kit-styles.css">
+    <link rel="stylesheet" href="ui-kit/ui-kit-content/css/ui-kit-styles.css">
+    <link rel="stylesheet" href="ui-kit/ui-kit-footer/css/ui-kit-styles.css">
+    <style type="text/css">
+        body {
+            padding-top: 0;
+        }
 
-  /* visited link */
-  .myhead  a:visited {
-    color: #FFF;
-  }
+        .myhead a:link {
+            color: #FFF;
+            text-decoration: underline;
+        }
 
-  /* mouse over link */
-  .myhead  a:hover {
-    color: #FFF;      
-  }
+        /* visited link */
+        .myhead a:visited {
+            color: #FFF;
+        }
 
-  /* selected link */
-  .myhead a:active {
-    color: #FFF;      
-  }
+        /* mouse over link */
+        .myhead a:hover {
+            color: #FFF;
+        }
 
-  .header-10-sub .background {
-    background-image: url('img/bpmn.png');
-    opacity: 0.95;
-    filter: alpha(opacity=95);
-    padding:0px;
-  }
-  .trento {
-    background-image: url('http://crowdcafe.io/static/landing/img/bg/trento.jpg');
+        /* selected link */
+        .myhead a:active {
+            color: #FFF;
+        }
 
-    background-position: 50% !important;
-    height:600px !important;
-  }
-  </style>
+        .header-11-sub .background {
+            background-image: url('img/bpmn.png');
+            opacity: 0.95;
+            filter: alpha(opacity=95);
+            padding: 0px;
+        }
+
+        .header-11-sub .container {
+            background-color: rgba(44, 62, 80, 0.5);
+            color: #000;
+        }
+
+        .header-11-sub p {
+            color: #fff;
+        }
+
+        .header-11-sub .hero-unit {
+            color: #fff;
+        }
+
+        .trento {
+            background-image: url('img/polo.jpg');
+            color: #34495e;
+            background-position: 50% !important;
+            height: 600px !important;
+        }
+
+        .carousel-indicators {
+            left: 30%;
+        }
+
+        .link-color a {
+            color: #34495e;
+        }
+
+        .content-8 p small{
+            font-size:60%;
+        }
+
+
+    </style>
 </head>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-53403316-1', 'auto');
-ga('send', 'pageview');
+    ga('create', 'UA-53403316-1', 'auto');
+    ga('send', 'pageview');
 
 </script>
 <body>
-
-  <section class="header-10-sub v-center bg-belize-hole">
-    <div class="background">&nbsp;</div>
-    <div>
-      <div class="container">
-        <div class="hero-unit">
-          <!-- <h3>Welcome to</h3> -->
-          <h1>CrowdComputer.org</h1>
-          <p>Crowdsourcing with a taste of BPMN
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- <a class="control-btn fui-arrow-down" href="#"></a> -->
-  </section>
-   <!--  <section class="content-23 v-center bg-belize-hole hidden">
-        <div>
-          <div class="container">
-            <div class="hero-unit hero-unit-bordered myhead ">
-              <h3>Welcome to</h3>
-              <h1>CrowdComputer.org</h1>
-              <p>Reinventing crowdsourcing one bit at a time
-                </p>
-            </div>
-          </div>
-        </div>
-        <a class="control-btn fui-arrow-down" href="#"></a>
-      </section> -->
-
-      <section class="content-8 v-center">
-        <div>
-          <div class="container">
-            <div class="row">
-             <div class="col-sm-6" >
-              <iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/PDsxCzllZpw?list=UUb1pdJRfCdbl7-WGgIKbHDA" frameborder="0" allowfullscreen></iframe>
-              <p>An introductory video of the first version of crowd computer. </p>
-
-            </div>
-            <div class="col-sm-6" >
-             <iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/ghcIN1RSIGw" frameborder="0" allowfullscreen></iframe>
-             <p>A demo of what crowdcomputer can do with BPMN. <a href="https://github.com/Crowdcomputer/CC/wiki/T0.0.Tutorial" target="_blank" style="color:red">Here</a> the tutorial and material  </p>
+<!--  <section class="header-11-sub bg-midnight-blue">
+       <div class="background">&nbsp;</div>
+       <div class="container">
+         <div class="row">
+           <div class="col-sm-4">
+             <h3>Features of Startup Framework</h3>
+             <p>You have the design, you have the code. We’ve created the product that will help your startup to look even better.</p>
+             <div class="signup-form">
+               <form>
+                 <div class="form-group">
+                   <input class="form-control" type="text" placeholder="Your E-mail">
+                 </div>
+                 <div class="form-group">
+                   <div>
+                     <input type="password" class="form-control" placeholder="Password">
+                   </div>
+                   <div>
+                     <input type="password" class="form-control" placeholder="Confirmation">
+                   </div>
+                 </div>
+                 <div class="form-group">
+                   <button type="submit" class="btn btn-block btn-info">Sign Up</button>
+                 </div>
+               </form>
+             </div>
+             <div class="additional-links">By signing up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+             </div>
+           </div>
+           <div class="col-sm-7 col-sm-offset-1 player-wrapper">
+             <div class="player">
+               <iframe id="pPlayer" src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+             </div>
            </div>
          </div>
-         <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <p>You can try the crowdcomputer. Just drop me an email and I'll set up everything just for you. 
-            </p>
-            <a class="btn btn-large btn-clear" href="mailto:stefano.tranquillini@gmail.com?subject=Demo Crowdcomputer">I WANT TO TRY</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+       </div>
+     </section> -->
+<section class="header-11-sub v-center bg-belize-hole">
+    <div class="background">&nbsp;</div>
+    <div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 text-center">
+                    <div class="hero-unit ">
+                        <h1>CrowdComputer.org </h1>
 
-  <section class="content-8 v-center welcome-block-opensource ani-processed bg-clouds" style="opacity: 1;">
-    <div>               
-      <div class="container">
-        <img width="300" height="300" alt="" src="http://www.crowdcafe.io/static/landing/img/octocat.png">                   
-        <h3>Open source</h3>
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <p>The CrowdComputer, and related projects, code is freely available on <b>Github</b>. 
-            </p>            
-          <!--p>
-            <iframe src="http://ghbtns.com/github-btn.html?user=CrowdCafe&amp;repo=crowdcafe&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
-            <iframe src="http://ghbtns.com/github-btn.html?user=CrowdCafe&amp;repo=crowdcafe&amp;type=fork&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
-          </p-->                
-          <a class="btn btn-large btn-clear" href="https://github.com/Crowdcomputer" target="_blank">Check it out on GitHub</a>
+                        <h3>Crowdsourcing with a taste of BPMN</h3>
+                    </div>
+                    <!-- <h3>Welcome to</h3> -->
+                </div>
+
+                <div class="col-sm-12">
+                    <hr/>
+                    <p>Crowdsourcing is the outsourcing of a unit of work to a crowd of people via an open call for
+                        contributions. Thanks to the availability of online crowdsourcing platforms, such as Amazon
+                        Mechanical Turk or Crowd- Flower, the practice has experienced a tremendous growth over the last
+                        few years and demonstrated its viability in a variety of different fields, such as data
+                        collection and analysis or human computation. Yet, it is also increasingly struggling with the
+                        inherent limitations of these platforms: each platform has its own logic of how to crowdsource
+                        work (e.g., marketplace or contest), there is only very little support for structured work (work
+                        that requires the coordination of multiple tasks), and it is hard to integrate crowdsourced
+                        tasks into state-of-the-art business process management (BPM) or information systems.</p>
+
+                    <p>
+                        We attack these three shortcomings by (i) developing a flexible crowdsourcing platform (we call
+                        it Crowd Computer, CC) that allows one to program custom crowdsourcing logics for individual as
+                        well as structured tasks, (ii) devising a BPMN-based modeling language that allows one to
+                        program the CC intuitively, (iii) equipping the language with a dedicated visual editor, and
+                        (iv) implementing the CC on top of standard BPM technology that can easily be integrated into
+                        existing software and processes. We demonstrate the effectiveness of the approach with a case
+                        study on the crowd-based mining of mashup model patterns.
+
+                    </p>
+                </div>
+
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+    <!-- <a class="control-btn fui-arrow-down" href="#"></a> -->
+</section>
+
+<section class="content-8 bg-clouds">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>The research behind crowdcomputer:
+            </h3>
+            <p class="link-color">  <a
+                    href="http://disi.unitn.it/~tranquillini/uni/static/papers/KucherbaevBPMS22012.pdf" target="_blank"> Business Processes for the Crowd Computer - <span
+                    class="glyphicon glyphicon-download-alt"></span></a></p>
+        </div>
+    </div>
+</section>
+<!--  <section class="content-23 v-center bg-belize-hole hidden">
+     <div>
+       <div class="container">
+         <div class="hero-unit hero-unit-bordered myhead ">
+           <h3>Welcome to</h3>
+           <h1>CrowdComputer.org</h1>
+           <p>Reinventing crowdsourcing one bit at a time
+             </p>
+         </div>
+       </div>
+     </div>
+     <a class="control-btn fui-arrow-down" href="#"></a>
+   </section> -->
+
+<!-- <section class="content-8 " style="opacity: 1;">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3> BPMN4Crowd: modeling BPMN exploting the crowd</h3>
+                </div>
+                <div class="col-sm-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/bpmn.png" alt="...">
+
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/bpmn.png" alt="...">
+
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                           data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                           data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<section class="content-8 v-center bg-clouds">
+    <div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <iframe width="560" height="315"
+                src="http://www.youtube-nocookie.com/embed/z-BIGraWPC8"
+                frameborder="0" allowfullscreen></iframe>
+                <p>Example: Evaluation of a logo made by the crowd </p>
+
+              </div>
+                <div class="col-sm-6">
+                    <iframe  width="560" height="315" src="http://www.youtube-nocookie.com/embed/ghcIN1RSIGw"
+                            frameborder="0" allowfullscreen></iframe>
+                    <p>Upload and describe of a picture<br> <a
+                            href="https://github.com/Crowdcomputer/CC/wiki/T0.0.Tutorial" target="_blank"
+                            style="color:red">Here</a> the tutorial and material. *<br />
+                        <small> * the editor has slightly changed after this video, so tasks may be diffrent in the last version</small></p>
+                    <p></p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h3>You can try the crowdcomputer</h3>
+                    <a class="btn btn-large btn-clear"
+                       href="http://new.crowdcomputer.org/login/" target="_blank">Register here</a> and then
+                    <a class="btn btn-large btn-clear"
+                       href="mailto:stefano.tranquillini@gmail.com">Send us an email to setup your account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-8 v-center welcome-block-opensource ani-processed" style="opacity: 1;">
+    <div>
+        <div class="container">
+            <img width="150" height="150" alt="" src="img/gh.png">
+
+            <h3>Open source</h3>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>All the CrowdComputer code is freely available on <b>Github</b>.
+                    </p>
+                    <!--p>
+                      <iframe src="http://ghbtns.com/github-btn.html?user=CrowdCafe&amp;repo=crowdcafe&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
+                      <iframe src="http://ghbtns.com/github-btn.html?user=CrowdCafe&amp;repo=crowdcafe&amp;type=fork&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
+                    </p-->
+                    <a class="btn btn-large btn-clear" href="https://github.com/Crowdcomputer/CC" target="_blank">Crowdcomputer</a>
+                    <a class="btn btn-large btn-clear"
+                       href="https://github.com/Crowdcomputer/BPMN4Crowd-Activiti-Task-UIs" target="_blank">Task UI</a>
+                    <a class="btn btn-large btn-clear" href="https://github.com/Crowdcomputer/BPMN4Crowd-Compiler"
+                       target="_blank">Compiler</a>
+                    <a class="btn btn-large btn-clear" href="https://github.com/Crowdcomputer/" target="_blank">Additonal
+                        material</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="content-23 v-center ani-processed trento">
-  <div class="background">&nbsp;</div>
-  <div>
-    <div class="container">
-      <div class="row v-center">
-        <div class="col-ml-12">
-          <div class="hero-unit hero-unit-bordered">
- <h1>Proudly made in Trento by</h1>      </div>
-         
-        </div>
-      </div>
-  
-     </div>
-   </div>
- </div>
-</section>
-<section class="content-8 v-center ani-processsed bg-cloud">
-  <div class="container">
-        <div class="row v-center">
-        <div class="col-ml-6">
-          <div>
-            <a href='http://stefanotranquillini.me' target='_blank'> <img src='img/stefano.png' class='img-circle avatar' width="100px"> <h5>Stefano Tranquillini</h5> </a>
-          </div>
-        </div>
-        <div class="col-ml-6">
-         <!--  <div class="col-sm-offset-5"> -->
-         <a href='http://kucherbaev.com' target='_blank'> <img src='img/pavel.jpg' class='img-circle avatar' width="100px"> <h5>Pavel Kucherbaev</h5> </a>
+    <div class="background">&nbsp;</div>
+    <div>
+        <div class="container">
+            <div class="row v-center">
+                <div class="col-ml-12">
+                    <div class="hero-unit hero-unit-bordered">
+                        <h1>Made at the University of Trento</h1></div>
+                </div>
+            </div>
 
-         <!-- </div> -->
+        </div>
     </div>
-  </div>
-  </section>
+    </div>
+</section>
 <footer class="footer-3">
-  <div class="container">
-    <div class="row v-center">
-      <div class="col-sm-2">
-        <a class="brand" href="#">CrowdComputer</a>
-      </div>
-      <div class="col-sm-7">
-        <div class="additional-links">
-          Made in Italy with love.
+    <div class="container">
+        <div class="row v-center">
+            <div class="col-sm-2">
+                <a class="brand" href="#">CrowdComputer</a>
+            </div>
+            <div class="col-sm-7">
+                <div class="additional-links">
+                    <a href="mailto:team@crowdcomputer.org">contact us</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <h6><a href="www.lifeparticipation.org">University of Trento</a></h6>
+
+                <div class="address">
+                    Via sommarive 9
+                    <br>Povo, TN, Italy, 38123
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <h6>University of Trento</h6>
-        <div class="address">
-          Via sommarive 9
-          <br>Povo, TN, Italy, 38123
-        </div>
-      </div>
     </div>
-  </div>
 </footer>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="common-files/js/jquery-1.10.2.min.js"></script>
@@ -205,13 +371,25 @@ ga('send', 'pageview');
 <script src="common-files/js/easing.min.js"></script>
 <script src="common-files/js/jquery.svg.js"></script>
 <script src="common-files/js/jquery.svganim.js"></script>
-<script src="common-files/js/startup-kit.js"></script> 
+<script src="common-files/js/startup-kit.js"></script>
 <script type="text/javascript">
-$(window).resize(function() {
-  var sH = $(window).height();
-  $('section.header-10-sub').css('height', (sH - $('header').outerHeight()) + 'px');
-            // $('section:not(.header-10-sub):not(.content-11)').css('height', sH + 'px');
-          });       
-</script> 
+    $(window).resize(function () {
+        var sH = $(window).height();
+        $('section.header-10-sub').css('height', (sH - $('header').outerHeight()) + 'px');
+        // $('section:not(.header-10-sub):not(.content-11)').css('height', sH + 'px');
+
+        // if (!el.hasClass('ani-processed')) {
+        //     el.eq(0).data('scrollPos', el.eq(0).offset().top - $(window).height() + shift);
+        // }
+        var sH = $(window).height();
+//        this makes it fullscreen
+        var size = (sH - $('.header-11-sub').height()) / 2;
+        $('.header-11-sub').css('padding-top', size + 'px');
+//        size = size * 0.5;
+//        $('.header-11-sub').css('padding-top', size + 90 + 'px');
+        $('.header-11-sub').css('padding-bottom', size + 'px');
+    });
+
+</script>
 </body>
 </html>

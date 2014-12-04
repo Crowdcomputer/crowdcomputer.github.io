@@ -1,0 +1,56 @@
+ body {
+            padding-top: 0;
+        }
+        .myhead a:link {
+            color: #FFF;
+            text-decoration: underline;
+        }
+        /* visited link */
+        .myhead a:visited {
+            color: #FFF;
+        }
+        /* mouse over link */
+        .myhead a:hover {
+            color: #FFF;
+        }
+        /* selected link */
+        .myhead a:active {
+            color: #FFF;
+        }
+        .header-11-sub .background {
+            background-image: url('img/bpmn.png');
+            opacity: 0.95;
+            filter: alpha(opacity=95);
+            padding: 0px;
+        }
+        .header-11-sub .container {
+            background-color: rgba(44, 62, 80, 0.5);
+            color: #000;
+        }
+        .header-11-sub p {
+            color: #fff;
+        }
+        .header-11-sub .hero-unit {
+            color: #fff;
+        }
+        .trento {
+            background-image: url('img/polo.jpg');
+            color: #34495e;
+            background-position: 50% !important;
+            height: 600px !important;
+        }
+        .carousel-indicators {
+            left: 30%;
+        }
+        .link-color a {
+            color: #34495e;
+        }
+        .content-8 p small{
+            font-size:60%;
+        }
+        .description{
+          text-align:justify;
+        }
+        .content-8 p{
+          margin-bottom:5px;
+        }
